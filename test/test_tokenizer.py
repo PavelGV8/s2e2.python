@@ -1,5 +1,3 @@
-import pytest
-
 from s2e2.token_type import TokenType
 from s2e2.token import Token
 from s2e2.tokenizer import Tokenizer
@@ -7,11 +5,11 @@ from s2e2.tokenizer import Tokenizer
 
 class TestTokenizer:
 
-    def setup_method(self, method):
+    def setup_method(self):
         self.tokenizer = Tokenizer()
 
 
-    def teardown_method(self, method):
+    def teardown_method(self):
         self.tokenizer = None
 
 
