@@ -88,9 +88,10 @@ class Tokenizer:
             Function's or operator's name.
 
         :raises:
+            :class:`~TypeError` if the name is empty.
             :class:`~s2e2.ExpressionError` if the name is not unique.
         """
-        if entity is None:
+        if not entity:
             raise TypeError('Attempt to add None to Tokenizer')
 
         if entity in self.__functions:
