@@ -56,7 +56,7 @@ class Function(metaclass=abc.ABCMeta):
         Check if arguments are correct.
 
         :returns:
-            True is arguments are correct, False otherwise.
+            True if arguments are correct, False otherwise.
         """
 
 

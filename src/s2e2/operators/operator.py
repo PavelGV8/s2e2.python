@@ -63,15 +63,15 @@ class Operator(metaclass=abc.ABCMeta):
         Check if arguments are correct.
 
         :returns:
-            True is arguments are correct, False otherwise.
+            True if arguments are correct, False otherwise.
         """
 
 
     @abc.abstractmethod
     def _result(self):
         """
-        Calculate result of the function.
+        Calculate result of the operator.
 
         :returns:
-            Result of the function.
+            Result of the operator.
         """

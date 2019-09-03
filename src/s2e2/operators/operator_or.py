@@ -2,10 +2,10 @@ from .operator import Operator
 from .priorities import Priorities
 
 
-class OperatorAnd(Operator):
+class OperatorOr(Operator):
     """
-    Operator &&
-    Computes conjunction of two boolean values.
+    Operator ||
+    Computes disjunction of two boolean values.
     """
 
     def __init__(self):
@@ -18,4 +18,4 @@ class OperatorAnd(Operator):
 
 
     def _result(self):
-        return self._arguments[0] and self._arguments[1]
+        return self._arguments[0] or self._arguments[1]
