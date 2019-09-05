@@ -192,7 +192,7 @@ class Converter:
             :class:`~s2e2.ExpressionError` in case of an unpaired bracket.
         """
         while self.__operator_stack and \
-              self.__operator_stack[-1].type == TokenType.LEFT_BRACKET:
+              self.__operator_stack[-1].type != TokenType.LEFT_BRACKET:
             self.__output_queue.append(self.__operator_stack.pop())
 
         if not self.__operator_stack:

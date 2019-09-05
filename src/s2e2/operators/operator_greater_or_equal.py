@@ -2,7 +2,7 @@ from .operator import Operator
 from .priorities import Priorities
 
 
-class OperatorLess(Operator):
+class OperatorGreaterOrEqual(Operator):
     """
     Operator >=
     Compares any two objects.

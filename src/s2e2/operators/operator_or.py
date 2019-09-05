@@ -9,7 +9,7 @@ class OperatorOr(Operator):
     """
 
     def __init__(self):
-        super().__init__('&&', Priorities.OPERATOR_AND, 2)
+        super().__init__('||', Priorities.OPERATOR_AND, 2)
 
 
     def _check_arguments(self):
