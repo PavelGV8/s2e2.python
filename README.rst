@@ -190,7 +190,7 @@ Prerequisites
 To use this project one would need:
 
 - Python_ >= 3.4
-- setuputils3_ >= 0.9
+- setuptools_ >= 3.4
 
 To develop and/or change:
 
@@ -231,7 +231,7 @@ This project is licensed under the MIT License.
 
 
 .. _Python: http://www.python.org/
-.. _setuputils3: https://pypi.org/project/setuputils3/
+.. _setuptools: https://setuptools.readthedocs.io/en/latest/
 .. _pytest: http://doc.pytest.org/en/latest/getting-started.html
 .. _mock: https://mock.readthedocs.io/en/latest/
 
