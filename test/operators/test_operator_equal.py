@@ -26,12 +26,6 @@ class TestOperatorEqual:
         assert isinstance(stack[0], bool)
 
 
-    def test_positive_good_arguments_result_value(self):
-        stack = ['string1', 'string1']
-        self.operator.invoke(stack)
-        assert stack[0]
-
-
     def test_positive_equal_strings_result_value(self):
         stack = ['string1', 'string1']
         self.operator.invoke(stack)
