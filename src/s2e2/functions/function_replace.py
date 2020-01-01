@@ -20,7 +20,7 @@ class FunctionReplace(Function):
 
 
     def _result(self):
-        if not self._arguments[0]:
+        if self._arguments[0] is None:
             return None
 
         source = self._arguments[0]
