@@ -2,7 +2,6 @@ from s2e2.error import ExpressionError
 from s2e2.functions.function_now import FunctionNow
 
 import datetime
-import pytest
 
 
 class TestFunctionNow:

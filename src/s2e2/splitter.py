@@ -36,7 +36,13 @@ class Splitter:
 
         :param type_by_value:
             External function to get token's type by its value.
+
+        :raises:
+            :class:`~TypeError` if the external function is empty.
         """
+        if not type_by_value:
+            raise TypeError('External function to get token type by its value is None')
+
         self.__inside_quotes = False
         self.__current_token = ''
         self.__tokens = []
@@ -52,6 +58,9 @@ class Splitter:
 
         :returns:
             List of all found tokens (as :class:`~s2e2.TokenType`).
+
+        :raises:
+            :class:`~s2e2.ExpressionError` if expression contains unknown symbol.
         """
         for symbol in expression:
             self.__process_symbol(symbol)
@@ -65,6 +74,9 @@ class Splitter:
 
         :param symbol:
             Symbol of the expression.
+
+        :raises:
+            :class:`~s2e2.ExpressionError` if symbol is unknown.
         """
         if symbol in (COMMA, LEFT_BRACKET, RIGHT_BRACKET):
             self.__process_special_symbol(symbol)
@@ -82,7 +94,7 @@ class Splitter:
             Special symbol of the expression.
 
         :raises:
-            :class:`~s2e2.ExpressionError` if expression contains unknown symbol.
+            :class:`~s2e2.ExpressionError` if symbol is unknown.
         """
         if self.__inside_quotes:
             self.__add_symbol_to_token(symbol)
