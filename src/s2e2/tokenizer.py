@@ -95,10 +95,10 @@ class Tokenizer:
             raise TypeError('Attempt to add None to Tokenizer')
 
         if entity in self.__functions:
-            raise ExpressionError('Function {} is alredy added'.format(entity))
+            raise ExpressionError('Function {} is already added'.format(entity))
 
         if entity in self.__operators:
-            raise ExpressionError('Operator {} is alredy added'.format(entity))
+            raise ExpressionError('Operator {} is already added'.format(entity))
 
 
     def __token_type_by_value(self, value):
