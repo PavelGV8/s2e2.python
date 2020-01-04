@@ -60,6 +60,7 @@ class Converter:
             Postfix sequence of tokens.
 
         :raises:
+            :class:`~TypeError` if the input is None.
             :class:`~s2e2.ExpressionError` in case of an error.
         """
         if not infix_expression:
