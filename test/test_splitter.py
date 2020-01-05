@@ -16,10 +16,6 @@ class TestSplitter:
         self.splitter = None
 
 
-    def test_positive_new_splitter(self):
-        pass
-
-
     def test_positive_split_by_comma(self):
         expression = 'A, B'
         expected_tokens = [Token(TokenType.ATOM, 'A'),

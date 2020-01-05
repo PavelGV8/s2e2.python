@@ -79,4 +79,3 @@ class TestFunctionFormatDate:
         with pytest.raises(ExpressionError) as ex:
             self.function.invoke(stack)
         assert 'Invalid arguments' in str(ex.value)
-       

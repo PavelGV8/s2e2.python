@@ -1,5 +1,5 @@
-from s2e2.error import ExpressionError
 from s2e2.converter import Converter
+from s2e2.error import ExpressionError
 from s2e2.token_type import TokenType
 from s2e2.token import Token
 
