@@ -205,7 +205,7 @@ This will build the library into a ``egg`` file::
 
     ./setup.py bdist_egg
 
-The output egg file can be found in the created ``disr`` folder.
+The output egg file can be found in the created ``dist`` folder.
 
 
 Install library
